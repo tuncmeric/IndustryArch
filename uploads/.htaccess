@@ -1,0 +1,8 @@
+# Allow public read for uploaded images, but block any executable types
+# in case a malicious file ever sneaks past the upload validator.
+
+<FilesMatch "\.(php|phtml|phar|pl|py|cgi|sh|exe)$">
+    Require all denied
+</FilesMatch>
+
+Options -Indexes

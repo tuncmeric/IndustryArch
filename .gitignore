@@ -1,0 +1,31 @@
+node_modules
+dist
+dist-ssr
+*.local
+*.log
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.sw?
+
+# Build / deploy artifacts (regenerated locally before each deploy)
+deploy.tar.gz
+deploy.zip
+api-update.tar.gz
+smtp-test.tar.gz
+
+# Local PHP secrets (never commit — each environment has its own)
+api/config.php
+api/contact/test-smtp.php
+
+# User-uploaded files (created at runtime in production)
+uploads/projects
+uploads/settings
+
+# Lovable cache (legacy)
+.lovable
+.env
