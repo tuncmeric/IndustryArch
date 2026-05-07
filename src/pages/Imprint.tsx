@@ -7,25 +7,49 @@ const BACK    = { en: "← Back to home",                             pl: "← P
 
 const COPY = {
   en: {
-    company:   "Company details",
-    contact:   "Contact",
-    register:  "Court of registration",
-    represent: "Authorized representatives",
-    note:      "Some registration numbers are placeholders pending final company-secretary input. They will be updated here without redeploying the site (via the admin panel).",
+    seat:        "Registered seat",
+    office:      "Warsaw office",
+    company:     "Company details",
+    contact:     "Contact",
+    register:    "Court of registration",
+    represent:   "Authorized representatives",
+    legalForm:   "Legal form",
+    legalFormVal:"Limited liability company (Spółka z ograniczoną odpowiedzialnością)",
+    regDate:     "Date of registration",
+    regDateVal:  "17 January 2024",
+    capital:     "Share capital",
+    capitalVal:  "200,000 PLN (paid in full)",
+    courtName:   "District Court for Łódź-Śródmieście in Łódź, XX Commercial Division of the National Court Register",
   },
   pl: {
-    company:   "Dane spółki",
-    contact:   "Kontakt",
-    register:  "Sąd rejestrowy",
-    represent: "Reprezentacja",
-    note:      "Niektóre numery rejestrowe są tymczasowymi placeholderami i zostaną uzupełnione po finalnym wpisie sekretarza spółki. Aktualizacja nastąpi w panelu administracyjnym bez konieczności ponownego wdrożenia strony.",
+    seat:        "Adres siedziby",
+    office:      "Biuro Warszawa",
+    company:     "Dane spółki",
+    contact:     "Kontakt",
+    register:    "Sąd rejestrowy",
+    represent:   "Reprezentacja",
+    legalForm:   "Forma prawna",
+    legalFormVal:"Spółka z ograniczoną odpowiedzialnością",
+    regDate:     "Data rejestracji",
+    regDateVal:  "17 stycznia 2024 r.",
+    capital:     "Kapitał zakładowy",
+    capitalVal:  "200 000,00 zł (opłacony w całości)",
+    courtName:   "Sąd Rejonowy dla Łodzi-Śródmieścia w Łodzi, XX Wydział Gospodarczy Krajowego Rejestru Sądowego",
   },
   tr: {
-    company:   "Şirket bilgileri",
-    contact:   "İletişim",
-    register:  "Tescil mahkemesi",
-    represent: "Yetkili temsilciler",
-    note:      "Bazı tescil numaraları, şirket sekreterinin nihai girdisini bekleyen yer tutuculardır. Sitede yeniden dağıtım yapmadan yönetici panelinden güncellenecektir.",
+    seat:        "Tescilli merkez adresi",
+    office:      "Varşova ofisi",
+    company:     "Şirket bilgileri",
+    contact:     "İletişim",
+    register:    "Tescil mahkemesi",
+    represent:   "Yetkili temsilciler",
+    legalForm:   "Şirket türü",
+    legalFormVal:"Limited şirket (Spółka z ograniczoną odpowiedzialnością)",
+    regDate:     "Tescil tarihi",
+    regDateVal:  "17 Ocak 2024",
+    capital:     "Ödenmiş sermaye",
+    capitalVal:  "200.000 PLN (tamamı ödenmiş)",
+    courtName:   "Łódź-Śródmieście Bölge Mahkemesi (Łódź), XX Ulusal Mahkeme Sicili Ticaret Bölümü",
   },
 } as const;
 
@@ -36,30 +60,40 @@ export default function ImprintPage() {
   return (
     <LegalLayout title={TITLE[lang]} updated={UPDATED[lang]} back={BACK[lang]}>
       <LegalSection title={c.company}>
-        <div className="bg-card border border-border rounded-md p-5 sm:p-6 space-y-2">
-          <p className="font-semibold text-foreground">IndustryArch Sp. z o.o.</p>
-          <p>ul. Wieniecka 6</p>
-          <p>03-634 Warszawa</p>
-          <p>Poland</p>
-          <div className="pt-3 mt-3 border-t border-border space-y-1 text-sm">
-            <p><span className="text-muted-foreground">KRS:</span> <span className="font-mono">[to be filled in]</span></p>
-            <p><span className="text-muted-foreground">NIP:</span> <span className="font-mono">[to be filled in]</span></p>
-            <p><span className="text-muted-foreground">REGON:</span> <span className="font-mono">[to be filled in]</span></p>
-            <p><span className="text-muted-foreground">{lang === "pl" ? "Kapitał zakładowy" : lang === "tr" ? "Ödenmiş sermaye" : "Share capital"}:</span> <span className="font-mono">[to be filled in]</span></p>
+        <div className="bg-card border border-border rounded-md p-5 sm:p-6 space-y-3">
+          <p className="font-semibold text-foreground text-base">IndustryArch Sp. z o.o.</p>
+
+          <div className="pt-2 border-t border-border space-y-1">
+            <p className="text-xs uppercase tracking-wider text-muted-foreground">{c.seat}</p>
+            <p>Al. Armii Krajowej 15</p>
+            <p>97-300 Piotrków Trybunalski</p>
+            <p>{lang === "pl" ? "Polska" : lang === "tr" ? "Polonya" : "Poland"}</p>
+          </div>
+
+          <div className="pt-3 border-t border-border space-y-1">
+            <p className="text-xs uppercase tracking-wider text-muted-foreground">{c.office}</p>
+            <p>ul. Wieniecka 6</p>
+            <p>03-634 Warszawa</p>
+            <p>{lang === "pl" ? "Polska" : lang === "tr" ? "Polonya" : "Poland"}</p>
+          </div>
+
+          <div className="pt-3 mt-1 border-t border-border grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm">
+            <p><span className="text-muted-foreground">KRS:</span> <span className="font-mono">0001082166</span></p>
+            <p><span className="text-muted-foreground">NIP:</span> <span className="font-mono">7712929374</span></p>
+            <p><span className="text-muted-foreground">REGON:</span> <span className="font-mono">527479546</span></p>
+            <p><span className="text-muted-foreground">{c.legalForm}:</span> {c.legalFormVal}</p>
+            <p><span className="text-muted-foreground">{c.regDate}:</span> {c.regDateVal}</p>
+            <p><span className="text-muted-foreground">{c.capital}:</span> {c.capitalVal}</p>
           </div>
         </div>
       </LegalSection>
 
       <LegalSection title={c.register}>
-        <p>{lang === "pl"
-          ? "Sąd Rejonowy dla m.st. Warszawy w Warszawie, XIV Wydział Gospodarczy Krajowego Rejestru Sądowego."
-          : lang === "tr"
-            ? "Sąd Rejonowy dla m.st. Warszawy w Warszawie, XIV Ulusal Mahkeme Sicili Ticaret Bölümü (Polonya)."
-            : "Sąd Rejonowy dla m.st. Warszawy w Warszawie, XIV Commercial Division of the National Court Register (Poland)."}</p>
+        <p>{c.courtName}</p>
       </LegalSection>
 
       <LegalSection title={c.represent}>
-        <p className="font-mono text-sm">[Names of board members / authorized signatories — to be filled in]</p>
+        <p className="font-mono text-sm text-muted-foreground italic">[{lang === "pl" ? "Imiona członków zarządu — do uzupełnienia" : lang === "tr" ? "Yönetim kurulu üyeleri — eklenecek" : "Names of board members — to be filled in"}]</p>
       </LegalSection>
 
       <LegalSection title={c.contact}>
@@ -69,8 +103,6 @@ export default function ImprintPage() {
           <li><span className="text-muted-foreground">Web:</span> www.industryarch.com</li>
         </ul>
       </LegalSection>
-
-      <p className="text-xs text-muted-foreground italic mt-12 leading-relaxed">{c.note}</p>
     </LegalLayout>
   );
 }

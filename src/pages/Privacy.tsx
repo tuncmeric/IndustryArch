@@ -21,7 +21,7 @@ function ContentEN() {
   return (
     <>
       <LegalSection title="1. Data controller">
-        <p>The data controller of personal data processed via this website is <strong>IndustryArch Sp. z o.o.</strong>, ul. Wieniecka 6, 03-634 Warszawa, Poland.</p>
+        <p>The data controller of personal data processed via this website is <strong>IndustryArch Sp. z o.o.</strong>, Al. Armii Krajowej 15, 97-300 Piotrków Trybunalski, Poland.</p>
         <p>You can contact us in any data-related matter at <a href="mailto:info@industryarch.com" className="text-foreground underline underline-offset-2 hover:text-accent">info@industryarch.com</a> or +48 576 10 70 71.</p>
       </LegalSection>
 
@@ -90,7 +90,7 @@ function ContentPL() {
   return (
     <>
       <LegalSection title="1. Administrator danych">
-        <p>Administratorem danych osobowych przetwarzanych za pośrednictwem niniejszej strony jest <strong>IndustryArch Sp. z o.o.</strong>, ul. Wieniecka 6, 03-634 Warszawa, Polska.</p>
+        <p>Administratorem danych osobowych przetwarzanych za pośrednictwem niniejszej strony jest <strong>IndustryArch Sp. z o.o.</strong>, Al. Armii Krajowej 15, 97-300 Piotrków Trybunalski, Polska.</p>
         <p>W sprawach związanych z przetwarzaniem danych można skontaktować się pod adresem <a href="mailto:info@industryarch.com" className="text-foreground underline underline-offset-2 hover:text-accent">info@industryarch.com</a> lub +48 576 10 70 71.</p>
       </LegalSection>
 
@@ -159,7 +159,7 @@ function ContentTR() {
   return (
     <>
       <LegalSection title="1. Veri sorumlusu">
-        <p>Bu web sitesi aracılığıyla işlenen kişisel verilerin sorumlusu <strong>IndustryArch Sp. z o.o.</strong>, ul. Wieniecka 6, 03-634 Varşova, Polonya'dır.</p>
+        <p>Bu web sitesi aracılığıyla işlenen kişisel verilerin sorumlusu <strong>IndustryArch Sp. z o.o.</strong>, Al. Armii Krajowej 15, 97-300 Piotrków Trybunalski, Polonya'dır.</p>
         <p>Veri ile ilgili her konuda <a href="mailto:info@industryarch.com" className="text-foreground underline underline-offset-2 hover:text-accent">info@industryarch.com</a> adresinden veya +48 576 10 70 71 numarasından bize ulaşabilirsiniz.</p>
       </LegalSection>
 

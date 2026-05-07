@@ -21,7 +21,7 @@ function ContentEN() {
   return (
     <>
       <LegalSection title="1. About this website">
-        <p>This website (industryarch.com) is operated by IndustryArch Sp. z o.o., ul. Wieniecka 6, 03-634 Warszawa, Poland. It provides information about our construction services and project portfolio.</p>
+        <p>This website (industryarch.com) is operated by IndustryArch Sp. z o.o., Al. Armii Krajowej 15, 97-300 Piotrków Trybunalski, Poland. It provides information about our construction services and project portfolio.</p>
       </LegalSection>
 
       <LegalSection title="2. Permitted use">
@@ -43,7 +43,7 @@ function ContentEN() {
       </LegalSection>
 
       <LegalSection title="6. Governing law and jurisdiction">
-        <p>These terms are governed by Polish law. Any disputes shall be resolved by the competent court for the seat of IndustryArch Sp. z o.o. in Warsaw.</p>
+        <p>These terms are governed by Polish law. Any disputes shall be resolved by the competent court for the registered seat of IndustryArch Sp. z o.o. in Piotrków Trybunalski.</p>
       </LegalSection>
 
       <LegalSection title="7. Changes">
@@ -57,7 +57,7 @@ function ContentPL() {
   return (
     <>
       <LegalSection title="1. O stronie">
-        <p>Niniejsza strona (industryarch.com) prowadzona jest przez IndustryArch Sp. z o.o., ul. Wieniecka 6, 03-634 Warszawa, Polska. Zawiera informacje o świadczonych usługach budowlanych oraz portfolio realizacji.</p>
+        <p>Niniejsza strona (industryarch.com) prowadzona jest przez IndustryArch Sp. z o.o., Al. Armii Krajowej 15, 97-300 Piotrków Trybunalski, Polska. Zawiera informacje o świadczonych usługach budowlanych oraz portfolio realizacji.</p>
       </LegalSection>
 
       <LegalSection title="2. Dozwolone korzystanie">
@@ -79,7 +79,7 @@ function ContentPL() {
       </LegalSection>
 
       <LegalSection title="6. Prawo właściwe i jurysdykcja">
-        <p>Niniejszy regulamin podlega prawu polskiemu. Spory rozstrzyga sąd właściwy dla siedziby IndustryArch Sp. z o.o. w Warszawie.</p>
+        <p>Niniejszy regulamin podlega prawu polskiemu. Spory rozstrzyga sąd właściwy dla siedziby IndustryArch Sp. z o.o. w Piotrkowie Trybunalskim.</p>
       </LegalSection>
 
       <LegalSection title="7. Zmiany regulaminu">
@@ -93,7 +93,7 @@ function ContentTR() {
   return (
     <>
       <LegalSection title="1. Bu web sitesi hakkında">
-        <p>Bu web sitesi (industryarch.com), IndustryArch Sp. z o.o., ul. Wieniecka 6, 03-634 Varşova, Polonya tarafından işletilmektedir. İnşaat hizmetlerimiz ve proje portföyümüz hakkında bilgi sunar.</p>
+        <p>Bu web sitesi (industryarch.com), IndustryArch Sp. z o.o., Al. Armii Krajowej 15, 97-300 Piotrków Trybunalski, Polonya tarafından işletilmektedir. İnşaat hizmetlerimiz ve proje portföyümüz hakkında bilgi sunar.</p>
       </LegalSection>
 
       <LegalSection title="2. İzin verilen kullanım">
@@ -115,7 +115,7 @@ function ContentTR() {
       </LegalSection>
 
       <LegalSection title="6. Geçerli hukuk ve yargı yetkisi">
-        <p>Bu koşullar Polonya hukukuna tabidir. Tüm anlaşmazlıklar IndustryArch Sp. z o.o.'nun Varşova'daki merkezi için yetkili mahkemede çözülecektir.</p>
+        <p>Bu koşullar Polonya hukukuna tabidir. Tüm anlaşmazlıklar IndustryArch Sp. z o.o.'nun Piotrków Trybunalski'deki tescilli merkezi için yetkili mahkemede çözülecektir.</p>
       </LegalSection>
 
       <LegalSection title="7. Değişiklikler">
