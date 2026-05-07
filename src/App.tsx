@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { I18nProvider } from "@/lib/i18n";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { CookieBanner } from "@/components/CookieBanner";
 
 import HomePage from "@/pages/Home";
 import AboutPage from "@/pages/About";
@@ -13,6 +14,10 @@ import StandardsPage from "@/pages/Standards";
 import ContactPage from "@/pages/Contact";
 import AuthPage from "@/pages/Auth";
 import AdminPage from "@/pages/Admin";
+import PrivacyPage from "@/pages/Privacy";
+import CookiesPage from "@/pages/Cookies";
+import TermsPage from "@/pages/Terms";
+import ImprintPage from "@/pages/Imprint";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -58,10 +63,15 @@ export default function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/auth" element={<AuthPage />} />
           <Route path="/admin" element={<AdminPage />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
+          <Route path="/cookies" element={<CookiesPage />} />
+          <Route path="/terms" element={<TermsPage />} />
+          <Route path="/imprint" element={<ImprintPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
       <Footer />
+      <CookieBanner />
     </I18nProvider>
   );
 }

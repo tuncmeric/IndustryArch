@@ -92,9 +92,26 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/10 mt-14 pt-8 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-primary-foreground/40">
-            © {new Date().getFullYear()} IndustryArch Sp. z o.o. · {t("footer.rights")}
+        {/* Legal links row */}
+        <div className="border-t border-primary-foreground/10 mt-14 pt-8 flex flex-wrap items-center gap-x-6 gap-y-2">
+          <Link to="/privacy"  className="text-xs text-primary-foreground/60 hover:text-primary-foreground transition-colors">{t("legal.privacy")}</Link>
+          <Link to="/cookies"  className="text-xs text-primary-foreground/60 hover:text-primary-foreground transition-colors">{t("legal.cookies")}</Link>
+          <Link to="/terms"    className="text-xs text-primary-foreground/60 hover:text-primary-foreground transition-colors">{t("legal.terms")}</Link>
+          <Link to="/imprint"  className="text-xs text-primary-foreground/60 hover:text-primary-foreground transition-colors">{t("legal.imprint")}</Link>
+        </div>
+
+        {/* Copyright + provider credit */}
+        <div className="mt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+          <p className="text-xs text-primary-foreground/40 leading-relaxed">
+            © {new Date().getFullYear()} IndustryArch Sp. z o.o. · {t("footer.rights")} · {t("footer.providedby")}{" "}
+            <a
+              href="https://www.teamknocknock.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary-foreground/60 hover:text-accent transition-colors underline-offset-2 hover:underline"
+            >
+              Team Knocknock
+            </a>
           </p>
           <p className="text-xs text-primary-foreground/40 uppercase tracking-wider">Warsaw · Poland</p>
         </div>
