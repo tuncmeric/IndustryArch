@@ -1,0 +1,19 @@
+# Force LF line endings on all text files committed to the repo.
+# Prevents cPanel and other Linux tools from choking on Windows CRLF.
+* text=auto eol=lf
+
+# Files cPanel parses strictly — must be LF
+*.yml      text eol=lf
+*.yaml     text eol=lf
+.cpanel.yml text eol=lf
+*.sh       text eol=lf
+.htaccess  text eol=lf
+
+# Binary files — leave alone
+*.png      binary
+*.jpg      binary
+*.jpeg     binary
+*.gif      binary
+*.ico      binary
+*.webp     binary
+*.svg      text eol=lf
