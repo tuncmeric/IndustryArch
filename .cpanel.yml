@@ -1,0 +1,18 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/industryarch/public_html
+    # Clear old hashed JS/CSS bundles before copying the new build.
+    # Vite's content-hash filenames mean orphans accumulate without this.
+    - /bin/rm -rf $DEPLOYPATH/assets
+    # Frontend: copy contents of dist/ into public_html/
+    - /usr/bin/rsync -a dist/ $DEPLOYPATH/
+    # Backend: sync api/, but never touch the production config.php (server-side secret)
+    # or any leftover diagnostic files.
+    - /usr/bin/rsync -a --exclude=config.php --exclude=test-smtp.php api/ $DEPLOYPATH/api/
+    # Apache rewrite rules + uploads-folder lockdown
+    - /bin/cp .htaccess $DEPLOYPATH/.htaccess
+    - /bin/mkdir -p $DEPLOYPATH/uploads
+    - /bin/cp uploads/.htaccess $DEPLOYPATH/uploads/.htaccess
+    # Belt-and-suspenders cleanup of the diagnostic endpoint, if it ever made it server-side.
+    - /bin/rm -f $DEPLOYPATH/api/contact/test-smtp.php

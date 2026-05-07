@@ -1,5 +1,6 @@
 node_modules
-dist
+# dist/ is committed because cPanel's Git Version Control deploy
+# environment doesn't run npm — we ship pre-built bundles to the server.
 dist-ssr
 *.local
 *.log
