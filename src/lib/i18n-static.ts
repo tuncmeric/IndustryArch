@@ -151,6 +151,7 @@ export const staticTranslations: Record<string, { en: string; pl: string; tr: st
   "meta.area": { en: "Area", pl: "Powierzchnia", tr: "Alan" },
   "meta.gc": { en: "General Contractor", pl: "Generalny Wykonawca", tr: "Genel Müteahhit" },
   "meta.pm": { en: "PM & General Contractor", pl: "PM i Generalny Wykonawca", tr: "Proje Yönetimi ve Genel Müteahhit" },
+  "meta.sub": { en: "Subcontractor", pl: "Podwykonawca", tr: "Taşeron" },
   "case.turkey.location": { en: "Warsaw, Poland", pl: "Warszawa, Polska", tr: "Varşova, Polonya" },
   "case.turkey.scope": { en: "Maintenance · Renovation · Modernization", pl: "Utrzymanie · Remont · Modernizacja", tr: "Bakım · Tadilat · Modernizasyon" },
   "case.turkey.outcome": { en: "Three buildings under continuous service since 2024 with zero security incidents.", pl: "Trzy budynki w ciągłej obsłudze od 2024 r., bez incydentów bezpieczeństwa.", tr: "2024'ten beri sürekli hizmet altında üç bina, sıfır güvenlik olayı." },

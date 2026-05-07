@@ -14,7 +14,7 @@ export default function HomePage() {
 
   const featured = [
     { title: t("projects.turkey.title"), desc: t("projects.turkey.desc"), area: "3 Buildings", status: t("projects.turkey.status"), image: "/images/turkish-embassy.jpg", category: t("projects.cat.diplomatic"), location: t("case.turkey.location"), scope: t("case.turkey.scope"), outcome: t("case.turkey.outcome"), role: t("meta.gc"), sensitive: true },
-    { title: t("projects.usa.title"), desc: t("projects.usa.desc"), area: "+3,000 m²", status: t("projects.usa.status"), image: "/images/usa-residence.jpg", category: t("projects.cat.diplomatic"), location: t("case.usa.location"), scope: t("case.usa.scope"), outcome: t("case.usa.outcome"), role: t("meta.gc"), sensitive: true },
+    { title: t("projects.usa.title"), desc: t("projects.usa.desc"), area: "+3,000 m²", status: t("projects.usa.status"), image: "/images/usa-residence.jpg", category: t("projects.cat.diplomatic"), location: t("case.usa.location"), scope: t("case.usa.scope"), outcome: t("case.usa.outcome"), role: t("meta.sub"), sensitive: true },
     { title: t("projects.willa.title"), desc: t("projects.willa.desc"), area: "+4,050 m²", image: "/images/willa-wojcieszyn.jpg", category: t("projects.cat.residential"), location: t("case.willa.location"), scope: t("case.willa.scope"), outcome: t("case.willa.outcome"), role: t("meta.gc") },
     { title: t("projects.mokotow.title"), desc: t("projects.mokotow.desc"), area: "+1,458 m²", image: "/images/mokotow-building.jpg", category: t("projects.cat.residential"), location: t("case.mokotow.location"), scope: t("case.mokotow.scope"), outcome: t("case.mokotow.outcome"), role: t("meta.pm") },
   ];
