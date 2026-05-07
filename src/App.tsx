@@ -52,7 +52,7 @@ export default function App() {
     <I18nProvider>
       <ScrollToTop />
       <Header />
-      <main className="pt-16 sm:pt-20">
+      <main className="pt-20 sm:pt-24">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
