@@ -24,7 +24,7 @@ export default function ProjectsPage() {
     { category: "diplomatic", title: t("projects.usa.title"), desc: t("projects.usa.desc"), area: "+3,000 m²", status: t("projects.usa.status"), icon: Home, image: "/images/usa-residence.jpg" },
     { category: "residential", title: t("projects.willa.title"), desc: t("projects.willa.desc"), area: "+4,050 m²", icon: Home, image: "/images/willa-wojcieszyn.jpg" },
     { category: "residential", title: t("projects.mokotow.title"), desc: t("projects.mokotow.desc"), area: "+1,458 m²", icon: Building2, image: "/images/mokotow-building.jpg" },
-    { category: "residential", title: t("projects.wawer.title"), desc: t("projects.wawer.desc"), area: "+150 m²", icon: Home },
+    { category: "residential", title: t("projects.wawer.title"), desc: t("projects.wawer.desc"), area: "+150 m²", icon: Home, image: "/images/wawer-house.jpg" },
     { category: "commercial", title: t("projects.mabel.title"), desc: t("projects.mabel.desc"), area: "+200 m²", icon: Building2, image: "/images/mabel-clinic.jpg" },
     { category: "commercial", title: t("projects.kolin.title"), desc: t("projects.kolin.desc"), area: "+400 m²", icon: Building2 },
     { category: "commercial", title: t("projects.polandstudy.title"), desc: t("projects.polandstudy.desc"), area: "+160 m²", icon: Building2 },

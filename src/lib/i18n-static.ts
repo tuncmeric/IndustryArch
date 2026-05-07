@@ -64,6 +64,7 @@ export const staticTranslations: Record<string, { en: string; pl: string; tr: st
   "sectors.infra.desc": { en: "Earthworks and cable installation supporting road and utility infrastructure across European projects.", pl: "Prace ziemne i instalacje kablowe wspierające infrastrukturę drogową i energetyczną w projektach europejskich.", tr: "Avrupa projelerinde yol ve şebeke altyapısını destekleyen kazı ve kablo döşeme işleri." },
   "home.projects.eyebrow": { en: "Portfolio", pl: "Portfolio", tr: "Portföy" },
   "home.projects.title": { en: "Selected Projects", pl: "Wybrane Realizacje", tr: "Seçili Projeler" },
+  "projects.title": { en: "Projects", pl: "Realizacje", tr: "Projeler" },
   "projects.subtitle": { en: "A representative overview of recent work. Full portfolio and detailed references are available upon request.", pl: "Reprezentatywny przegląd ostatnich realizacji. Pełne portfolio i szczegółowe referencje udostępniamy na życzenie.", tr: "Son işlerimizden temsili bir kesit. Tam portföy ve ayrıntılı referanslar talep üzerine sunulmaktadır." },
   "projects.viewall": { en: "View All Projects", pl: "Zobacz wszystkie realizacje", tr: "Tüm Projeleri Gör" },
   "projects.cat.all": { en: "All", pl: "Wszystkie", tr: "Tümü" },
